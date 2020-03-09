@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testingpackage.ExpectedExceptionConcept"/>
+      <class name="testingpackage.DependOnMethodConcept"/>
+      <class name="testingpackage.InvicationMthodTestConcept"/>
+      <class name="testingpackage.AssertConcept"/>
+      <class name="testingpackage.TestNgBasics"/>
+      <class name="testingpackage.GenrateTestReportConcept"/>
+      <class name="testingpackage.GroupingTheTestCases"/>
+    </classes>
+    <Listener>
+    <class name="TestNG."
+    </Listener>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
