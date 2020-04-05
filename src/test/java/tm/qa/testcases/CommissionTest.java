@@ -1,5 +1,8 @@
 package tm.qa.testcases;
 
-public class CommissionTest {
+import tm.qa.testbase.BaseClass;
+
+public class CommissionTest extends BaseClass {
+	
 
 }

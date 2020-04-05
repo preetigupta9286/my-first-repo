@@ -48,90 +48,67 @@ WebElement clickOnEmail;
 
 
    //Constructor
-  public HomePage()      
-   {
-	PageFactory.initElements(driver, this);
-   }
-              
-  
+  public HomePage(){
+  PageFactory.initElements(driver, this);
+  }
+     
   //actions
-            public HomePage validHomeBtn()
-             {
-	       homebtn.click();
-	       return  new HomePage();
-             }
+  public String validHomeBtn() {
+  homebtn.click();
+  String  actual=  driver.getCurrentUrl();
+  return actual;
+  }
             
-            
-           public  SignInPage validMyTMbtn()
-             {
-	         clickOnMyTm.click();
-	         return new SignInPage();
-	        }
-           
-       
-          public SignUpPage ClickOnBecomeAnAgent()
-          {
-    	   clickOnBecomeAnAgent.click();; 
-    	   return new SignUpPage();
-          }
+   public  CommissionPage validMyTMbtn() {
+   clickOnMyTm.click();
+//   String  actual=  driver.getCurrentUrl();
+//   return actual;
+return new CommissionPage();
+   }
+   public String ClickOnBecomeAnAgent() {
+   clickOnBecomeAnAgent.click();; 
+   String  actual=  driver.getCurrentUrl();
+   return actual;
+   }
           
-          
-         public HomePage validLogo()
-             {
-	         clickOnLogo.isEnabled();
-	        return  new HomePage();
-	        }
+   public String validLogo() {
+   clickOnLogo.isEnabled();
+   String  actual=  driver.getCurrentUrl();
+   return actual;
+   }
          
+   public HomePage ValidGetAQuotebtn() {   
+   clickOnGetAQuote.click();
+   return new HomePage();
+   }
          
-         public HomePage ValidGetAQuotebtn()
-              {   
-    	    clickOnGetAQuote.click();
-    	    return new HomePage();
-    	    }
-         
-         
-       public boolean validInsurancePlanbtn()
-             {
-        	return ClickOnInsurancePlan.isEnabled();
-             }
+   public boolean validInsurancePlanbtn() {
+   return ClickOnInsurancePlan.isEnabled();
+   }
        
+   public boolean validSuperVisaVSSinglebtn() {
+   return clickOnSuperVisaVSSingle.isEnabled();
+   }
+      
+   public boolean validBottomGetAQuote() {
+   return clickOnBottomGetAQuote.isEnabled();
+   }
+      
+   public boolean AboutUsBtn() {
+   return AboutUsbtn.isEnabled();  
+   }
        
-       public boolean validSuperVisaVSSinglebtn()
-             {
-        	return clickOnSuperVisaVSSingle.isEnabled();
-             }
+   public boolean PrivacyPolicyBtn(){
+   return privacypolbtn.isEnabled();
+   }
        
-       
-       public boolean validBottomGetAQuote()
-             {
-        	return clickOnBottomGetAQuote.isEnabled();
-        	 }
-       
-       
-       public boolean AboutUsBtn()
-       {
-    	  return AboutUsbtn.isEnabled();  
-       }
-       
-       
-       public boolean PrivacyPolicyBtn()
-       {
-    	  return privacypolbtn.isEnabled();
-       }
-       
-       
-       public boolean TermsAndCondBtn()
-       {
-      return termscondionsbtn.isEnabled();
-      }
-       
-       
-       public boolean EmailLink()
-       {
-    	   return clickOnEmail.isEnabled();
-       }
-	
-	
+   public boolean TermsAndCondBtn(){
+   return termscondionsbtn.isEnabled();
+   }
+      
+   public boolean EmailLink() {
+   return clickOnEmail.isEnabled();
+   }
 	
 	
 }

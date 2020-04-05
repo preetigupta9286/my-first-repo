@@ -38,15 +38,14 @@ public class SignUpPage extends BaseClass
    
 //actions
   
-      public UserProfilePage validSignUpData(String FN,String LN,String EM,String vpswd,String cpswd)
-        {
-    	  FirstName.sendKeys(FN);
-    	  LastName.sendKeys(LN);
-          EmailforSignUp.sendKeys(EM);
-          VPassword.sendKeys(vpswd);
-          ConfVPassword.sendKeys(cpswd); 
-          checkAgree.click();
-    	   SignUpbtn.click();
-    	   return new UserProfilePage();
-    	 
+      public UserProfilePage validdata(String FN,String LN,String EM,String vpswd,String cpswd){
+      FirstName.sendKeys(FN);
+      LastName.sendKeys(LN);
+      EmailforSignUp.sendKeys(EM);
+      ConfVPassword.sendKeys(cpswd); 
+      checkAgree.click();
+	   SignUpbtn.click();
+	   return new UserProfilePage();
        }}
+     
+       

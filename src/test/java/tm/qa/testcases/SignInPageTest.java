@@ -1,3 +1,4 @@
+
 package tm.qa.testcases;
 
 import org.testng.annotations.AfterMethod;
@@ -15,26 +16,31 @@ public class SignInPageTest extends BaseClass{
 	public static HomePage home;
 	public static SignInPage signin;
 	
+	
+	
 	public SignInPageTest()
 	{
 		super();
 	}
 	
 	@BeforeMethod()
-	public void setup()
+	public void setup() 
 	{
-		initialization();
+		
+			initialization();
+			util = new Utils();
 		signin=new SignInPage();
 		home=new HomePage();
-		signin=home.validMyTMbtn();
-	}
+		home.validMyTMbtn();
+		
+	
+     }
+	
 	
 	
 	@Test(priority=1)
-	public void VarifyUserName()
-	{
-		signin.validEmail(prop.getProperty("username"));
-	
+	public void VarifyUserName(){
+	signin.validEmail(prop.getProperty("username"));
 	}
 	
 	
@@ -53,7 +59,10 @@ public class SignInPageTest extends BaseClass{
 	
 	@AfterMethod
 	public void teardown()
-	{
+	{try {
 		driver.quit();
+	 } catch (Exception e) {
+         e.printStackTrace();
+     }
 	}
 }

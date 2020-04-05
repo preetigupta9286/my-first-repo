@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TravelMediCare Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReportsClass" />
+	</listeners>
+
+
+	<test name="TravelMediCare Test Cases">
+		<classes>
+			<class name="tm.qa.testcases.SignInPageTest"></class>
+			<class name="tm.qa.testcases.HomePageTestCase"></class>
+			<class name="tm.qa.testcases.SignUpPageTest"></class>
+			<class name="tm.qa.testcases.CommissionTest"></class>
+			<class name="tm.qa.testcases.GenreateQuoteTest"></class>
+			<class name="tm.qa.testcases.UserProfileTest"></class>
+			<class name="tm.qa.testcases.MyQuoteTest"></class>
+
+		</classes>
+	</test>
+</suite>

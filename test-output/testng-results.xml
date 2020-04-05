@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-27T21:49:17Z" name="Default suite" finished-at="2020-02-27T21:49:43Z" duration-ms="25811">
+  <suite started-at="2020-04-04T01:06:31Z" name="Default suite" finished-at="2020-04-04T01:06:40Z" duration-ms="9274">
     <groups>
     </groups>
-    <test started-at="2020-02-27T21:49:17Z" name="Default test" finished-at="2020-02-27T21:49:43Z" duration-ms="25811">
-      <class name="tm.qa.testcases.SignInPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:18Z" name="setup" finished-at="2020-02-27T21:49:26Z" duration-ms="8562" status="PASS">
+    <test started-at="2020-04-04T01:06:31Z" name="Default test" finished-at="2020-04-04T01:06:40Z" duration-ms="9274">
+      <class name="tm.qa.testcases.GenreateQuoteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tm.qa.testcases.GenreateQuoteTest@26e356f0]" started-at="2020-04-03T21:06:31Z" name="setup" finished-at="2020-04-03T21:06:39Z" duration-ms="7952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VarifyUserName()[pri:1, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:26Z" name="VarifyUserName" finished-at="2020-02-27T21:49:26Z" duration-ms="68" status="PASS">
+        <test-method signature="validateFDOC()[pri:1, instance:tm.qa.testcases.GenreateQuoteTest@26e356f0]" started-at="2020-04-03T21:06:39Z" name="validateFDOC" finished-at="2020-04-03T21:06:40Z" duration-ms="1306" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VarifyUserName -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:26Z" name="teardown" finished-at="2020-02-27T21:49:26Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:26Z" name="setup" finished-at="2020-02-27T21:49:34Z" duration-ms="7788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="VarifyPassword()[pri:2, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:34Z" name="VarifyPassword" finished-at="2020-02-27T21:49:34Z" duration-ms="122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VarifyPassword -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:34Z" name="setup" finished-at="2020-02-27T21:49:43Z" duration-ms="8540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:34Z" name="teardown" finished-at="2020-02-27T21:49:34Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="ValidLoginBtn()[pri:3, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:43Z" name="ValidLoginBtn" finished-at="2020-02-27T21:49:43Z" duration-ms="691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidLoginBtn -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tm.qa.testcases.SignInPageTest@197d671]" started-at="2020-02-27T21:49:43Z" name="teardown" finished-at="2020-02-27T21:49:43Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tm.qa.testcases.SignInPageTest -->
+        </test-method> <!-- validateFDOC -->
+      </class> <!-- tm.qa.testcases.GenreateQuoteTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
