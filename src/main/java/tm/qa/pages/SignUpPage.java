@@ -42,6 +42,7 @@ public class SignUpPage extends BaseClass
       FirstName.sendKeys(FN);
       LastName.sendKeys(LN);
       EmailforSignUp.sendKeys(EM);
+      VPassword.sendKeys(vpswd);
       ConfVPassword.sendKeys(cpswd); 
       checkAgree.click();
 	   SignUpbtn.click();

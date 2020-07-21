@@ -16,53 +16,39 @@ public class SignInPageTest extends BaseClass{
 	public static HomePage home;
 	public static SignInPage signin;
 	
-	
-	
 	public SignInPageTest()
 	{
 		super();
 	}
 	
 	@BeforeMethod()
-	public void setup() 
-	{
-		
-			initialization();
-			util = new Utils();
-		signin=new SignInPage();
-		home=new HomePage();
-		home.validMyTMbtn();
-		
-	
-     }
-	
-	
-	
+	public void setup() {
+	initialization();
+	util = new Utils();
+	signin=new SignInPage();
+	home=new HomePage();
+	home.validMyTMbtn();
+	}
 	@Test(priority=1)
 	public void VarifyUserName(){
-	signin.validEmail(prop.getProperty("username"));
+	signin.validEmail("username");
 	}
 	
-	
 	@Test(priority=2)
-	public void VarifyPassword()
-	{
-		signin.validpassword(prop.getProperty("password"));
+	public void VarifyPassword(){
+	signin.validpassword("password");
 	}
 	
 	@Test(priority=3)
-	public void ValidLoginBtn()
-	{
-		signin.clickOnLogin();
+	public void ValidLoginBtn(){
+	signin.clickOnLogin();
 	}
-	
-	
 	@AfterMethod
 	public void teardown()
 	{try {
-		driver.quit();
+	driver.quit();
 	 } catch (Exception e) {
-         e.printStackTrace();
+      e.printStackTrace();
      }
 	}
 }

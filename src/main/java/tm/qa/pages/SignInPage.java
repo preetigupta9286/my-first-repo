@@ -19,22 +19,18 @@ public class SignInPage extends BaseClass
  WebElement LoginBtn;
       
 //constructor
-  public SignInPage()
+  public  SignInPage()
   {
 	PageFactory.initElements(driver, this);
   }
 	//actions
-       public void validEmail(String un)
-       {
-	   Email.sendKeys(un);
-       }
-	   public void validpassword(String psw)
-	   {
-	   Password.sendKeys(psw); 	   
-	   }
-	   public void clickOnLogin()
-	   {
-	   LoginBtn.click();
-	   }
-	
-}
+  public void validEmail(String un){
+  Email.sendKeys(prop.getProperty("username"));
+  }
+  public void validpassword(String psw){
+  Password.sendKeys(prop.getProperty("password")); 	   
+  }
+  public GenerateQuote clickOnLogin(){
+  LoginBtn.click();
+  return new GenerateQuote();
+}}

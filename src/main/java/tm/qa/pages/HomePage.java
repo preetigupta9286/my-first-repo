@@ -59,11 +59,11 @@ WebElement clickOnEmail;
   return actual;
   }
             
-   public  CommissionPage validMyTMbtn() {
+   public  GenQuote validMyTMbtn() {
    clickOnMyTm.click();
 //   String  actual=  driver.getCurrentUrl();
 //   return actual;
-return new CommissionPage();
+return new GenQuote();
    }
    public String ClickOnBecomeAnAgent() {
    clickOnBecomeAnAgent.click();; 
